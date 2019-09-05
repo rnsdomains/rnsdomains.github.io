@@ -3,7 +3,7 @@ layout: rns
 title: Python Library
 ---
 
-Python Library to resolve your RIF Name Service address on your app.
+[Python Library](https://github.com/rnsdomains/rns-python-lib) to resolve your RIF Name Service address on your app.
 
 ## Requirements
 
