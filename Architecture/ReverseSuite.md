@@ -23,6 +23,11 @@ function reverseResolve (address) {
 }
 ```
 
+<div class="alert alert-warning">
+  <h4>Ensure a reverse lookup</h4>
+  As the owner of the reverse-node is able to set any name as resolution after claiming, it is important to ensure the resulting `name` is used in the forward-resolution. To do so you might query the name's address resolution.
+</div>
+
 ## Register a reverse resolution
 
 The owner of the `addr.reverse` domain is a registrar that permits the caller to take ownership of the reverse record for their own address.
