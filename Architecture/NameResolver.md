@@ -7,8 +7,8 @@ Return a valid RNS name for the requested node, or the empty string if no name i
 
 ## Mainnet
 
-- **Address**: [TODO]()
-- **ABI**: [TODO]()
+- **Address**: [0x4b1a11bf6723e60b9d2e02aa3ece34e24bde77d9](https://explorer.rsk.co/address/0x4b1a11bf6723e60b9d2e02aa3ece34e24bde77d9)
+- **ABI**: [NameResolverABI.json](/Architecture/NameResolverABI.json)
 
 See [RNS Testnet section](/RNS-Testnet) for testing environment information.
 
