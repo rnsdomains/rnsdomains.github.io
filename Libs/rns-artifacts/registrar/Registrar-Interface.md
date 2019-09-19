@@ -26,7 +26,7 @@ contract Registrar is RegistrarInterface {
 
     function register (bytes32 label) public {
         //...
-        rns.setSobnodeOwner(rootNode, label, msg.sender);
+        rns.setSubnodeOwner(rootNode, label, msg.sender);
     }
 }
 ```
