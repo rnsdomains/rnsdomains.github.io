@@ -11,6 +11,7 @@ _[Further reading](https://docs.rns.rifos.org/Architecture/Registrar)_
 
 ## Resources
 
+- [Registrar Interface](Registrar-Interface): A standard interface for Registrars.
 - [Subdomain Registrar](Subdomain-Registrar): Allows anyone to create sub-nodes under a given and owned RNS node.
 - [Public Subdomain Registrar](Public-Subdomain-Registrar): Allows anyone to create sub-nodes under any delegated  and owned RNS node.
 - [Price Subdomain Regitrar](Price-Subdomain-Registrar): Allows anyone who is whitelisted to create sub-nodes under a given RNS node and receive a token price for doing this.
