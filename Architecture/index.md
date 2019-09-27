@@ -8,6 +8,7 @@ The RIF Name Service architecture is based on 4 components:
 - [**Registrar**](#registrar): the auction logic manager.
 - [**Deeds**](#deed): handle locked tokens and rent payment commits.
 - [**Resolver**](#resolver): the resolution between a domain and a resource.
+- [**Reverse resolution**](#resolver): the resolution between an address and a name.
 
 <img src="/img/structure.png" class="img-fluid" alt="architecture" />
 
@@ -31,3 +32,7 @@ The [Registry contract](/Architecture/Registry) stores and handles the resolutio
 ## Resolver
 
 The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. A user can use [RNS Resolver](/Architecture/Resolver) or [implement a custom Resolver](/Operation/Resolve-a-name/).
+
+## Reverse suite
+
+A TLD, a [registrar](ReverseRegistrar), and a [resolver interface](AddrResolver) that allows for reverse resolution of RSK addresses using RNS. This permits associating a human-readable name with any RSK blockchain address. Resolvers can be certain that the reverse record was published by the owner of the RSK address in question.

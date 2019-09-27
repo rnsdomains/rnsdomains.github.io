@@ -15,21 +15,28 @@ Currently over the World Wide Web, the Domain Name System (DNS) is responsible f
 
 RIF Name Service's architecture is based on the Ethereum Name Service (ENS) described on [EIP-137](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-137.md). It is primarily divided in 4 components:
 
-### Registry
+### RNS Registry
 
 The Registry contract provides a simple mapping between a domain and its Resolver. Everything related to a domain ownership is managed in this contract, including ownership transfer and sub-domain creation.
 
-### Resolver
+### Address Resolver
 
 Resolver contracts are responsible for the resolution of a resource name. A Resolver has many user-defined functions and each function enables a different resource type to be fetched on the same Node.
 
-### Registrar
+### RSK Registrar
 
 The Registrar is responsible of RNS governance. In addition, it is responsible for registering the name of a domain for a user, and the only entity capable of updating the RNS Registry.
 
 ### Deed
 
 In order to prevent unnecessary used storage due to unused domains or prevent name squatting, the domain owner should have incentives to forfeit their ownership of them. To achieve this, the domain owner locks tokens which will be refunded when the domain is released.
+
+### Reverse suite
+
+Permits associating a human-readable name with any RSK blockchain address.
+
+> While name services are mostly used for forward resolution - going from human-readable identifiers to machine-readable ones - there are many use-cases in which reverse resolution is useful as well.
+
 
 <img src="/img/use-cases.png" class="img-fluid" alt="use-case" />
 
